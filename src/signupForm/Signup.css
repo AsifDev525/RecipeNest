@@ -1,32 +1,32 @@
-.login{
+.signup{
     display: flex;
     justify-content: center;
 }
-.login_form{
+.signup_form{
     background-color: rgb(207, 207, 209);
     color: black;
     width: 350px;
-    height: 350px;
+    height: 450px;
     display: flex;
     flex-direction: column;    
-    gap: 15px;
+    gap: 14px;
     border: 1px solid blue;
     border-radius: 20px;
 }
-.login_heading{
+.signup_heading{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
 }
-.login_input-group{
+.signup_input-group{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     margin-left: 20px;
 }
-.login_label{
+.signup_label{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.login_input{
+.signup_input{
     margin-top: 5px;
     width: 300px;
     height: 22px;
@@ -37,44 +37,44 @@
     padding-left: 10px;
 
 }
-.login_options{
+.signup_options{
     display: flex;
     justify-content: center;
     gap: 80px;
 }
-.login_options> input{
+.signup_options> input{
     cursor: pointer;
 }
-.login_forget{
+.signup_forget{
     font-size: 16px;
 }
-.login_button{
+.signup_button{
     display: flex;
     justify-content: center;
 }
-.login_button > button{
+.signup_button > button{
     width: 300px;
     height: 28px;
     cursor: pointer;
     font-size: 18px;
-    font-weight: bolder;
+    font-weight: bold;
     background-color: blue;
     color: white;
     border: none;
     border-radius: 10px;
 }
-.login_button > button:hover{
+.signup_button > button:hover{
     background-color: rgb(66, 77, 243);
     border: none;
 }
-.login_signup{
+.signup_login{
     display: flex;
     justify-content: center;
 }
-.login_signup_text{
+.signup_login_text{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.login_signup_text > a {
+.signup_login_text > a {
     font-weight: 500;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
