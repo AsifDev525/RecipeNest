@@ -1,0 +1,54 @@
+.section-title{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+}
+.series-container {
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 32px;
+  }
+.series-card{
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  .series-card:hover {
+    transform: translateY(-12px) scale(1.03) rotate(1deg);
+    box-shadow: 0 15px 30px black;
+    background: linear-gradient(135deg, #ffe6f0, #e0f7fa);
+  }
+  .series-card:active {
+    animation: clickEffect 0.3s forwards;
+  }
+.series-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.series-title{
+    font-family: sans-serif;
+    color: black;
+    font-size: 25px;
+}
+.series-origin {
+    color: #777;
+    font-size: 17.6px;
+    margin-bottom: 8px;
+  }
+  
+  .series-description {
+      color: #555;
+      padding: 0 16px;
+      font-size: 16px;
+  }

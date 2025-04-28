@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "title": "Spaghetti Carbonara",
+      "origin": "Italy",
+      "image": "../../../../public/spaghetti-carbonara.jpeg",
+      "description": "A creamy Italian pasta dish made with eggs, cheese, pancetta, and pepper."
+    },
+    {
+      "id": 2,
+      "title": "Sushi Platter",
+      "origin": "Japan",
+      "image": "../../../../public/sushi-platter.jpg",
+      "description": "A delightful assortment of fresh sushi rolls and sashimi, served with soy sauce and wasabi."
+    },
+    {
+      "id": 3,
+      "title": "Chicken Biryani",
+      "origin": "Pakistan",
+      "image": "../../../../public/chicken-biryani.jpg",
+      "description": "A rich and flavorful rice dish layered with marinated chicken, spices, and saffron."
+    },
+    {
+      "id": 4,
+      "title": "Tacos al Pastor",
+      "origin": "Mexico",
+      "image": "../../../../public/tacos-al-pastor.jpg",
+      "description": "Grilled pork tacos with pineapple, onions, and cilantro on soft corn tortillas."
+    },
+    {
+      "id": 5,
+      "title": "Butter Chicken",
+      "origin": "India",
+      "image": "../../../../public/butter-chicken.jpeg",
+      "description": "Tender chicken simmered in a creamy tomato sauce infused with Indian spices."
+    },
+    {
+      "id": 6,
+      "title": "Beef Pho",
+      "origin": "Vietnam",
+      "image": "../../../../public/beef-pho.jpeg",
+      "description": "A comforting noodle soup with thin slices of beef, fresh herbs, and rice noodles."
+    },
+    {
+      "id": 7,
+      "title": "Croissant",
+      "origin": "France",
+      "image": "../../../../public/croissant.jpg",
+      "description": "A buttery, flaky pastry that's a staple of French breakfasts."
+    },
+    {
+      "id": 8,
+      "title": "Shawarma",
+      "origin": "Middle East",
+      "image": "../../../../public/shawarma.jpeg",
+      "description": "Thinly sliced meat wrapped in flatbread with garlic sauce, veggies, and spices."
+    }
+  ]
+  

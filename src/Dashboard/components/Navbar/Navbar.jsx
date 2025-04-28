@@ -1,7 +1,6 @@
 
 import React from 'react'
 import "./Navbar.css"
-import RecipeCard from '../RecipeCard/RecipeCard'
 import Welcome from '../Welcome/Welcome'
 const Navbar = () => {
   return (
@@ -20,7 +19,6 @@ const Navbar = () => {
         <input class="search-input" type="text" placeholder='Search Recipes by ingredient...' />
       </div>
       <Welcome/>
-      <RecipeCard/>
     </div>
   )
 }
