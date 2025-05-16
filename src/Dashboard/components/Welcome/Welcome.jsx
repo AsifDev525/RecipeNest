@@ -2,7 +2,7 @@ import React from 'react'
 import "./Welcome.css"
 const Welcome = () => {
   return (
-    <div>
+    <>
         <div class="banner-image">
             <img class="welcome-banner" src='../../../../public/banner.jpg' alt='banner.jpg'/>
         </div>
@@ -13,7 +13,7 @@ const Welcome = () => {
                 Cook smart, eat better, and make every meal a moment to remember.
             </p>
         </div>
-    </div>
+    </>
   )
 }
 

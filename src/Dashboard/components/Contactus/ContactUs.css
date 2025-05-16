@@ -1,0 +1,91 @@
+.contact-heading {
+    padding: 5px;
+    color: white;
+    display: flex;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: rgb(0, 0, 255);
+}
+
+.contact-heading:hover {
+    background-color: rgb(0, 0, 200);
+}
+
+.main-contact {
+    gap: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    gap: 25px;
+    width: 500px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
+    transition: box-shadow 300ms ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form:hover {
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.name-label,
+.email-label,
+.message-label {
+    position: absolute;
+    font-size: 16px;
+    color: #333;
+}
+
+.name-input,
+.email-input,
+.message-input {
+    width: 400px;
+    margin-top: 25px;
+    font-size: 16px;
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 300ms ease, box-shadow 300ms ease;
+}
+
+.name-input:focus,
+.email-input:focus,
+.message-input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.4);
+}
+
+.message-input {
+    height: 120px;
+    resize: none;
+}
+
+.submit-button {
+    color: blue;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 8px 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid blue;
+    background-color: white;
+    transition: background-color 300ms ease, transform 300ms ease;
+}
+
+.submit-button:hover {
+    color: white;
+    transform: scale(1.05);
+    background-color: blue;
+}

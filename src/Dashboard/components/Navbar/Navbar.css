@@ -17,27 +17,42 @@
     background-color: #5e0606;
 }
 .navbar-item{
-    width: 110px;
+    width: 100px;
     height: 25px;
     display: flex;
-    list-style: none;
     font-weight: bold;
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navbar-item:hover{
-    color: white;
+.navbar-item > a{
+    margin-top: 14px;
+    display: flex;
+    width: 150px;
     cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #4E342E;
+    font-weight: bold;
     border-radius: 10px;
-    background-color: #4E342E;
+    transition: all 0.3s ease;
+    text-decoration-line: none;
+    background-color: #FFF8F0;
+    border: 2px solid #5e0606;
+    font-family: Arial, sans-serif;
 }
-.navbar-logout{
+.navbar-item a:hover{
+    border-color: #4E342E;
+    box-shadow: 0 0 5px rgba(78, 52, 46, 0.5);
+}
+.navbar-logout a{
     padding: 5px;
     cursor: pointer;
+    list-style: none;
     color: #FFFFFF;
     font-weight: bold;
     border-radius: 10px;
+    text-decoration-line: none;
     background-color: #D32F2F;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -55,4 +70,139 @@
     padding-left: 8px;
     border-radius: 20px;
     border: 2px solid rgb(3, 3, 3);
+}
+.custom-select {
+    width: 150px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #4E342E;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #FFF8F0;
+    border: 2px solid #5e0606;
+    font-family: Arial, sans-serif;
+}
+
+.custom-select:hover,
+.custom-select:focus {
+    border-color: #4E342E;
+    box-shadow: 0 0 5px rgba(78, 52, 46, 0.5);
+}
+
+.custom-select option {
+    color: blue;
+    border-bottom: 4px solid red;
+    cursor: pointer;
+    font-weight: normal;
+    background-color: #fff8f0;
+}
+.custom-select {
+    transition: all 0.3s ease;
+}
+
+.dashboard-navbar{
+    display: flex;
+    color: #4E342E;
+    align-items: center;
+    background-color: #FFF8F0;
+    justify-content: space-around;
+}
+.navbar-menu{
+    gap: 80px;
+    display: flex;
+}
+.dashboard-logo{
+    padding: 5px;
+    cursor: pointer;
+    color: #FFF3E0;
+    border-radius: 50px;
+    background-color: #5e0606;
+}
+.navbar-item{
+    width: 100px;
+    height: 25px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-item > a{
+    margin-top: 14px;
+    display: flex;
+    padding-right: 50px;
+    width: 150px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #4E342E;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration-line: none;
+    background-color: #FFF8F0;
+    border: 2px solid #5e0606;
+    font-family: Arial, sans-serif;
+}
+.navbar-item a:hover{
+    border-color: #4E342E;
+    box-shadow: 0 0 5px rgba(78, 52, 46, 0.5);
+}
+.navbar-logout a{
+    padding: 5px;
+    cursor: pointer;
+    list-style: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration-line: none;
+    background-color: #D32F2F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+
+}
+.search-input{
+    width: 80%;
+    padding: 5px;
+    outline: none;
+    font-size: 15px;
+    margin-top: 20px;
+    padding-left: 8px;
+    border-radius: 20px;
+    border: 2px solid rgb(3, 3, 3);
+}
+.custom-select {
+    width: 150px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #4E342E;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #FFF8F0;
+    border: 2px solid #5e0606;
+    font-family: Arial, sans-serif;
+}
+
+.custom-select:hover,
+.custom-select:focus {
+    border-color: #4E342E;
+    box-shadow: 0 0 5px rgba(78, 52, 46, 0.5);
+}
+
+.custom-select option {
+    color: blue;
+    border-bottom: 4px solid red;
+    cursor: pointer;
+    font-weight: normal;
+    background-color: #fff8f0;
+}
+.custom-select {
+    transition: all 0.3s ease;
 }

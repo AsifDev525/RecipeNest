@@ -1,0 +1,179 @@
+.terms-policies-title {
+    padding: 5px;
+    color: white;
+    display: flex;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: rgb(0, 0, 255);
+    animation: fadeInTop 1s ease-in-out;
+}
+
+.terms-policy-container {
+    gap: 20px;
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.terms-section {
+    flex: 1;
+    padding: 25px;
+    color: white;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    background-color: #2c3e50;
+    animation: fadeInLeft 1.2s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.terms-section:hover {
+    transform: scale(1.02); 
+}
+
+.terms-title {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.policy-section {
+    flex: 1;
+    padding: 25px;
+    color: white;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 20px;
+    background-color: #1abc9c;
+    animation: fadeInRight 1.2s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s;
+}
+.policy-section:hover {
+    transform: scale(1.02);
+}
+
+.policy-title {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.subHeading {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #ffd700;
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+    transition: color 0.3s ease;
+}
+.subHeading:hover {
+    color: white;
+    background-color: #007bff;
+}
+
+/* Paragraph Descriptions */
+.discription {
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: 'Segoe UI', sans-serif;
+    color: #f1f1f1;
+    text-align: justify;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 1023px) {
+    .terms-policies-title {
+        font-size: 26px;
+        padding: 10px 20px;
+    }
+
+    .card-box {
+        padding: 24px;
+        flex: 1 1 90%;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .subHeading {
+        font-size: 17px;
+    }
+
+    .discription {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .terms-policy-container {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .terms-policies-title {
+        font-size: 22px;
+        width: 100%;
+        padding: 8px 10px;
+    }
+
+    .card-box {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .subHeading {
+        font-size: 16px;
+    }
+
+    .discription {
+        font-size: 13px;
+    }
+}

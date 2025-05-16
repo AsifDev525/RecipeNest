@@ -1,6 +1,9 @@
 import React from 'react'
 import "./RecipeCard.css"
-import SeriesData from "./SeriesDara.json"
+import { RiArrowRightSLine } from "react-icons/ri";
+import SeriesData from "./SeriesData.json"
+
+
 const RecipeCard = () => {
   return (
     <>
@@ -13,6 +16,7 @@ const RecipeCard = () => {
                     <h1 class="series-title">{curElem.title}</h1>
                     <h2 class="series-origin">{curElem.origin}</h2>
                     <p class="series-discription">{curElem.description}</p>
+                    <button class ="more-details-btn"> More detail </button> 
                   </div>
               )
             })}
