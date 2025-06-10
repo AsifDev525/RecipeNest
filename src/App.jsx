@@ -1,29 +1,25 @@
 import React from 'react'
 import UserLogin from './Loginform/UserLogin'
 import Signup from './signupForm/Signup'
-import Navbar from './Dashboard/components/Navbar/Navbar'
-import RecipeCard from './Dashboard/components/RecipeCard/RecipeCard'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import SubDashboard from './Dashboard/MainDashboard/Sub_Dashboard'
 import AboutUs from './Dashboard/components/Aboutus/Aboutus'
-import ContactUS from './Dashboard/components/Contactus/ContactUS'
-import Welcome from './Dashboard/components/Welcome/Welcome'
-import Faq from './Dashboard/components/FAQ/Faq'
-import Term from './Dashboard/components/Term/Term'
-import LiveChat from './Dashboard/components/Contactus/LiveChat'
+import GetOut from './Dashboard/components/GetOut/GetOut'
 
 const App = () => {
   return (
     <div>
-       {/* <UserLogin/> */}
-       {/* <Signup/> */}
-       
-       <Navbar/>
-      <Welcome/>
-       <RecipeCard/>
-       <AboutUs/>  
-       <ContactUS/>
-       <LiveChat/>
-       <Faq/>
-       <Term/>
+      <BrowserRouter>
+       <Routes>
+         <Route path="/" element={    <UserLogin/> } />
+         <Route path="/login" element={    <UserLogin/> } />
+         <Route path='/signup' element={ <Signup/> } />
+         <Route path='/dashboard' element={ <SubDashboard/> } />
+         <Route path='/aboutus' element={ <AboutUs/> } />
+         <Route path='/getout' element={ <GetOut/> } />
+       </Routes>
+      </BrowserRouter>
     </div>
   )
 }

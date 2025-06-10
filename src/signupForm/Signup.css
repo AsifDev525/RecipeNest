@@ -6,10 +6,10 @@
     background-color: rgb(207, 207, 209);
     color: black;
     width: 350px;
-    height: 450px;
     display: flex;
     flex-direction: column;    
     gap: 14px;
+    padding-bottom: 20px;
     border: 1px solid blue;
     border-radius: 20px;
 }
@@ -45,9 +45,28 @@
 .signup_options> input{
     cursor: pointer;
 }
-.signup_forget{
-    font-size: 16px;
+.toggle{
+    color: rgb(240, 216, 0);
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 2px;
+    margin-bottom: -20px;
+    font-size: 15px;
+    border: 1px solid blue;
+    width: 120px;
+    cursor: pointer;
+    display: flex;
+    padding: 2px;
+    border-radius: 5px;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
 }
+.toggle:hover{
+    border: 1px solid blue;
+    color: white;
+}
+
 .signup_button{
     display: flex;
     justify-content: center;
@@ -78,4 +97,63 @@
     font-weight: 500;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 767px) {
+    .signup_form{
+        width: 96%;
+        padding: 16px;
+    }
+    .signup_input-group{
+        margin-left: 0;
+        font-size: 16px;
+    }
+    .signup_input{
+        width: 100%;
+        height: 30px;
+    }
+    .toggle{
+        width: 50%;
+        margin-top: 2px;
+        font-size: 15px;
+    }
+     .signup_button > button{
+        width: 100%;
+        height: 35px;
+        font-size: 16px;
+     }
+      .signup_heading {
+        font-size: 22px;
+      }
+      .signup_login_text{
+        font-size: 14px;
+        text-align: center;
+      }
+    
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+      .signup_form {
+    width: 85%;
+    padding: 18px;
+  }
+
+  .signup_input {
+    width: 100%;
+    height: 28px;
+  }
+
+  .toggle {
+    width: 100%;
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  .signup_input-group {
+    margin-left: 0;
+  }
+
+  .signup_button > button {
+    width: 100%;
+    height: 32px;
+  }    
 }

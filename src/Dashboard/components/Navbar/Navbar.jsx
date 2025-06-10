@@ -1,21 +1,39 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import "./Navbar.css"
 import { useNavigate } from 'react-router-dom'
 
 
 const Navbar = () => {
+  
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate
+
+
   const handleChange = (e) =>{
     const selectedURL = e.target.value;
-    if(selectedURL){
-      window.location.href= selectedURL;
+    if(
+          selectedURL !== "select_recipe" &&
+          selectedURL !== "cuisines" &&
+          selectedURL !== "holiday"
+    ){
+      navigate(`/${selectedURL}`);
+      setMenuOpen(false);
     }
   }
+  const toggleMenu = () =>{
+    setMenuOpen(!menuOpen);
+  };
   return (
     <div>
       <nav class="dashboard-navbar">
         <h1 class="dashboard-logo">RecipeNest</h1>
-        <ul class="navbar-menu">
+        
+        <div class="menu-toggle" onClick={toggleMenu}>
+          {menuOpen ? '✖' : '☰'}
+        </div>
+
+        <ul className={`navbar-menu ${menuOpen ? 'show' : ''}`}>
           <select className="custom-select" onChange={handleChange}>
               <option value="select_recipe">Select Recipe</option>
               <option value="breakfast">Breakfast</option>
@@ -51,14 +69,10 @@ const Navbar = () => {
               <option value="independence_day">Independence Day</option>
             </select>
 
-          
-          <li class="navbar-item"><a href="/aboutus">About us</a></li>
+         <li className="navbar-item"><a href="/aboutus">About us</a></li>
+        <li class="navbar-logout"><a href="/getout">Logout</a></li>
         </ul>
-        <div class="navbar-logout"><a href="/logout">Logout</a></div>
       </nav>
-      <div class="search-container">
-        <input class="search-input" type="text" placeholder='Search Recipes by ingredient...' />
-      </div>
     </div>
   )
 }

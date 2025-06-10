@@ -84,7 +84,6 @@
     background-color: #007bff;
 }
 
-/* Paragraph Descriptions */
 .discription {
     font-size: 15px;
     line-height: 1.7;
@@ -93,7 +92,6 @@
     text-align: justify;
 }
 
-/* Animations */
 @keyframes fadeInLeft {
     from {
         opacity: 0;
