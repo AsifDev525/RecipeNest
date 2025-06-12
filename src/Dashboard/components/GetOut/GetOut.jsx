@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
+import "./GetOut.css"
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import './Getout.css'
 import { useNavigate } from 'react-router-dom';
 
 const GetOut = () => {
