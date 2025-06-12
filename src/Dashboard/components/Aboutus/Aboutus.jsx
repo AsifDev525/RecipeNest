@@ -1,10 +1,11 @@
 import React from "react"
 import "./About.css"
 import seriesData from "./seriesData.json"
-
+import Navbar from "../Navbar/Navbar";
 const AboutUs = () => {
   return (
       <>
+      {/* <Navbar/> */}
           <div className="about-container">
               <div className="about-header">
                   <h1 className="main-heading">About Us</h1>

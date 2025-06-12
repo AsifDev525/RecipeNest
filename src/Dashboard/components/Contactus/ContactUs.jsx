@@ -12,25 +12,29 @@ const ContactUS = () => {
                 <Inform/>
                 {/* <LiveChat/> */} 
             </div>
-            <div class="form">
-                <form class="contact-form" action="">
-                        <div class="form-group"> 
-                            <label class="name-label" htmlFor="name">Name:</label>
-                            <input class="name-input" placeholder='Enter your name...' type="text" name="" id="name" />
-                        </div>
-                        <div class="form-group">
-                            <label class="email-label" htmlFor="email">Email:</label>
-                            <input class="email-input" placeholder='Enter youe email...' type="email" name="" id="email" />
-                        </div>
-                        <div class="form-group">
-                            <label class="message-label" htmlFor="message">Message:</label>
-                            <textarea class="message-input" placeholder='Enter your feedback...' name="" id="message"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type='submit' class="submit-button">Submit</button>
-                        </div>
-                    </form>
+            <div className="contact-container">
+            <form className="contact-form-box" action="">
+                <div className="contact-form-group"> 
+                <label className="contact-name-label" htmlFor="name">Name:</label>
+                <input className="contact-name-input" placeholder="Enter your name..." type="text" id="name" />
+                </div>
+
+                <div className="contact-form-group">
+                <label className="contact-email-label" htmlFor="email">Email:</label>
+                <input className="contact-email-input" placeholder="Enter your email..." type="email" id="email" />
+                </div>
+
+                <div className="contact-form-group">
+                <label className="contact-message-label" htmlFor="message">Message:</label>
+                <textarea className="contact-message-input" placeholder="Enter your feedback..." id="message"></textarea>
+                </div>
+
+                <div className="contact-form-group">
+                <button type="submit" className="contact-submit-btn">Submit</button>
+                </div>
+            </form>
             </div>
+
         </div>
     </>
   )

@@ -54,9 +54,8 @@ body {
 }
 
 .click >button {
-  background: linear-gradient(135deg, #e74c3c, #f39c12);
   color: white;
-  padding: 12px 25px;
+  padding: 5px 15px;
   font-size: 16px;
   font-weight: bold;
   border: none;
@@ -64,7 +63,8 @@ body {
   cursor: pointer;
   transition: 0.4s;
   margin-top: 10px;
-  letter-spacing: 1px;
+  margin-right: 10px;
+  background: linear-gradient(135deg, #e74c3c, #f39c12);
 }
 
 .click > button:hover {
@@ -72,10 +72,10 @@ body {
   transform: scale(1.05);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
-.non-visible{
+.non-show{
     position: relative;
 }
-.visible {
+.show {
   position: absolute;
   right: 50px;
   top: 360px;

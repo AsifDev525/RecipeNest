@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
   
   const [menuOpen, setMenuOpen] = useState(false);
-  const navigate = useNavigate
+  const navigate = useNavigate()
 
 
   const handleChange = (e) =>{
@@ -24,49 +24,79 @@ const Navbar = () => {
   const toggleMenu = () =>{
     setMenuOpen(!menuOpen);
   };
+
+const goDashboard = (e) => {
+  e.preventDefault();
+  navigate("/dashboard");
+};
   return (
     <div>
       <nav class="dashboard-navbar">
-        <h1 class="dashboard-logo">RecipeNest</h1>
-        
+      <h1 className="dashboard-logo" onClick={goDashboard}>
+        RecipeNest
+      </h1>
         <div class="menu-toggle" onClick={toggleMenu}>
           {menuOpen ? '✖' : '☰'}
         </div>
 
         <ul className={`navbar-menu ${menuOpen ? 'show' : ''}`}>
           <select className="custom-select" onChange={handleChange}>
-              <option value="select_recipe">Select Recipe</option>
-              <option value="breakfast">Breakfast</option>
-              <option value="lunch">Lunch</option>
-              <option value="dinner">Dinner</option>
-              <option value="snacks">Snacks</option>
-              <option value="desserts">Desserts</option>
-              <option value="fastfood">Fast Food</option>
+              <option value="dashboard">Select Recipe</option>
+              <option value="dashboard">Breakfast</option>
+              <option value="dashboard
+              ">Lunch</option>
+              <option value="dashboard
+              ">Dinner</option>
+              <option value="dashboard
+              ">Snacks</option>
+              <option value="dashboard
+              ">Desserts</option>
+              <option value="dashboard
+              ">Fast Food</option>
           </select>
 
             <select className="custom-select" onChange={handleChange}>
-              <option value="cuisines">Cuisines</option>
-              <option value="italian">Italian</option>
-              <option value="chinese">Chinese</option>
-              <option value="pakistani">Pakistani</option>
-              <option value="mexican">Mexican</option>
-              <option value="turkish">Turkish</option>
-              <option value="arabic">Arabic</option>
-              <option value="american">American</option>
-              <option value="portugal">Portugal</option>
+              <option value="dashboard
+              ">Cuisines</option>
+              <option value="dashboard
+              ">Italian</option>
+              <option value="dashboard
+              ">Chinese</option>
+              <option value="dashboard
+              ">Pakistani</option>
+              <option value="dashboard
+              ">Mexican</option>
+              <option value="dashboard
+              ">Turkish</option>
+              <option value="dashboard
+              ">Arabic</option>
+              <option value="dashboard
+              ">American</option>
+              <option value="dashboard
+              ">Portugal</option>
             </select>
 
             <select className="custom-select" onChange={handleChange}>
-              <option value="holiday">Holidays</option>
-              <option value="eid">Eid</option>
-              <option value="ramadan">Ramadan</option>
-              <option value="christmas">Christmas</option>
-              <option value="thanksgiving">Thanksgiving</option>
-              <option value="diwali">Diwali</option>
-              <option value="hanukkah">Hanukkah</option>
-              <option value="new_year">New Year</option>
-              <option value="easter">Easter</option>
-              <option value="independence_day">Independence Day</option>
+              <option value="dashboard
+              ">Holidays</option>
+              <option value="dashboard
+              ">Eid</option>
+              <option value="dashboard
+              ">Ramadan</option>
+              <option value="dashboard
+              ">Christmas</option>
+              <option value="dashboard
+              ">Thanksgiving</option>
+              <option value="dashboard
+              ">Diwali</option>
+              <option value="dashboard
+              ">Hanukkah</option>
+              <option value="dashboard
+              ">New Year</option>
+              <option value="dashboard
+              ">Easter</option>
+              <option value="dashboard
+              ">Independence Day</option>
             </select>
 
          <li className="navbar-item"><a href="/aboutus">About us</a></li>

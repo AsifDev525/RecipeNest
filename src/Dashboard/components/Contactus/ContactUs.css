@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-.contact-form {
+.contact-form-box {
     gap: 25px;
     width: 500px;
     display: flex;
@@ -34,21 +34,21 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact-form:hover {
+.contact-form-box:hover {
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-.name-label,
-.email-label,
-.message-label {
+.contact-name-label,
+.contact-email-label,
+.contact-message-label {
     color: #333;
     font-size: 16px;
     position: absolute;
 }
 
-.name-input,
-.email-input,
-.message-input {
+.contact-name-input,
+.contact-email-input,
+.contact-message-input {
     width: 400px;
     margin-top: 25px;
     font-size: 16px;
@@ -59,20 +59,20 @@
     transition: border-color 300ms ease, box-shadow 300ms ease;
 }
 
-.name-input:focus,
-.email-input:focus,
-.message-input:focus {
+.contact-name-input:focus,
+.contact-email-input:focus,
+.contact-message-input:focus {
     outline: none;
     border-color: blue;
     box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.4);
 }
 
-.message-input {
+.contact-message-input {
     resize: none;
     height: 120px;
 }
 
-.submit-button {
+.contact-submit-btn {
     color: blue;
     cursor: pointer;
     font-size: 17px;
@@ -84,11 +84,12 @@
     transition: background-color 300ms ease, transform 300ms ease;
 }
 
-.submit-button:hover {
+.contact-submit-btn:hover {
     color: white;
     transform: scale(1.05);
     background-color: blue;
 }
+
 
 @media (max-width: 1050px) {
     .main-contact {
@@ -97,14 +98,15 @@
         align-items: center;
         flex-direction: column;
     }
-    .form-group{
+    .contact-form-group {
         width: 100dvh;
     }
 
-    .contact-form {
+    .contact-form-box {
         width: 110dvh;
     }
-    .submit-button{
+
+    .contact-submit-btn {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -120,9 +122,10 @@
         margin: 0 auto;
         transition: background-color 300ms ease, transform 300ms ease;
     }
-    .name-input,
-    .email-input,
-    .message-input {
+
+    .contact-name-input,
+    .contact-email-input,
+    .contact-message-input {
         width: 100%;
     }
 
@@ -137,14 +140,16 @@
         align-items: center;
         flex-direction: column;
     }
-    .form-group{
+
+    .contact-form-group {
         width: 71dvh;
     }
 
-    .contact-form {
+    .contact-form-box {
         width: 85dvh;
     }
-    .submit-button{
+
+    .contact-submit-btn {
         display: flex;
         color: blue;
         margin: 0 auto;
@@ -160,16 +165,19 @@
         border: 1px solid blue;
         transition: background-color 300ms ease, transform 300ms ease;
     }
-    .name-input,
-    .email-input,
-    .message-input {
+
+    .contact-name-input,
+    .contact-email-input,
+    .contact-message-input {
         font-size: 15px;
         padding: 10px;
     }
-    .submit-button {
+
+    .contact-submit-btn {
         font-size: 16px;
         padding: 8px 20px;
     }
+
     .contact-heading {
         padding: 10px;
         font-size: 22px;
@@ -183,21 +191,23 @@
         align-items: center;
         flex-direction: column;
     }
-    .form-group{
+
+    .contact-form-group {
         width: 50dvh;
     }
 
-    .contact-form {
+    .contact-form-box {
         width: 60dvh;
     }
-    .name-input,
-    .email-input,
-    .message-input {
+
+    .contact-name-input,
+    .contact-email-input,
+    .contact-message-input {
         font-size: 14px;
         padding: 8px;
     }
 
-    .submit-button {
+    .contact-submit-btn {
         width: 100%;
         font-size: 15px;
         padding: 7px 18px;
